@@ -91,7 +91,9 @@ public class ListNode {
 
     /**
      * 链表反转
-     *
+     *pNext保存当前结点的下一个结点。
+     * pPrev链表进行反转指向前一个节点
+     * pNode保存当前结点
      * */
     public Node reverseIteratively(Node head){
 
@@ -100,13 +102,13 @@ public class ListNode {
         Node pNode=head;
         Node pPrev=null;//链表前驱
         while (pNode!=null){
-            Node pNext=pNode.next;//当前结点的下一个结点
+            Node pNext=pNode.next;//当前结点的下一个结点,保存当前结点的下一个结点
             if (pNext==null){
                 pReversedHead=pNode;
             }
             pNode.next=pPrev;//进行链表的反转，当前结点的下一个结点指向前一个节点
-            pPrev=pNode;//使用pprev指针保存状态
-            pNode=pNext;//pnode后移一个结点
+            pPrev=pNode;//使用pprev指针保存状态,
+            pNode=pNext;//pnode后移一个结点,得到保存当前结点的下一个结点
         }
         this.head=pReversedHead;
         return this.head;
@@ -213,6 +215,8 @@ public class ListNode {
         node4.addNode(4);
         node4.addNode(6);
         node4.addNode(7);
+        node4.reverseIteratively(node4.head);
+        node4.display();
         //node4.display();
         //System.out.println(node4.getByIndex(2,node4.head));
 
