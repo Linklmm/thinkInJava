@@ -1,7 +1,11 @@
 package com.holding;
 
 import java.util.ArrayList;
-
+/**
+ * @author myFlowerYourGrass
+ * 持有对象
+ *
+ * */
 class Apple{
     private static long counter;
     private final long id=counter++;
