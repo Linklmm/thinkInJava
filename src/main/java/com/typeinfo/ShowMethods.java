@@ -11,7 +11,7 @@ public class ShowMethods {
     private static Pattern p=Pattern.compile("\\w+\\.");
 
     public static void main(String[] args) {
-        System.out.println(args[0]);
+        //System.out.println(args[2]);
         System.out.println(args.length);
         if (args.length<1){
             System.out.println(usage);
