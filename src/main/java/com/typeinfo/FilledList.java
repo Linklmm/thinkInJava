@@ -5,7 +5,7 @@ import java.util.List;
 
 class CountedInteger{
     private static long counter;
-    private final static long id=counter++;
+    private final long id=counter++;
     @Override
     public String toString() {
         return Long.toString(id);
