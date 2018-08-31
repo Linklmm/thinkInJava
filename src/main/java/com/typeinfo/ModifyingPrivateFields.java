@@ -29,7 +29,7 @@ public class ModifyingPrivateFields {
         f.setAccessible(true);
         System.out.println("f.get(pf): "+f.get(pf));
 
-        f.set(pf,"No,you're not!");
+        f.set(pf,"No,you're not!");//final接受修改尝试，实际上不会发生任何改变
         System.out.println(pf);
         f=pf.getClass().getDeclaredField("s2");
         f.setAccessible(true);
