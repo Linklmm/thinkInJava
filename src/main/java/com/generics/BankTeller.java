@@ -11,6 +11,7 @@ class Customer{
     public String toString() {
         return "Customer "+id;
     }
+    //每次执行生成一个public的generator对象
     public static Generator<Customer> generator(){
         return new Generator<Customer>() {
             @Override
@@ -30,6 +31,7 @@ class Teller{
         return "Teller "+id;
     }
     public static Generator<Teller> generator=new Generator<Teller>() {
+        //生成对象
         @Override
         public Teller next() {
             return new Teller();
