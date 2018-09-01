@@ -4,9 +4,14 @@ import com.generics.Generator;
 
 import java.util.Iterator;
 import java.util.Random;
+/**
+ * 实现gennerator<Coffee>接口，它能够随机生成不同类型的Coffee对象
+ * @author myfloweryourgrass
+ * */
 
 public class CoffeeGenerator implements Generator<Coffee>,Iterable<Coffee> {
-    private Class[] types={Latte.class,Mocha.class,Cappuccino.class,Americano.class,Breve.class};//class对象数组
+    private Class[] types={Latte.class,Mocha.class,Cappuccino.class,Americano.class,Breve.class};//class对象数组即Coffee对象
+
     private static Random rand=new Random(47);
     public CoffeeGenerator(){}
     private int size=0;
@@ -51,6 +56,7 @@ public class CoffeeGenerator implements Generator<Coffee>,Iterable<Coffee> {
 
     public static void main(String[] args) {
         CoffeeGenerator gen=new CoffeeGenerator();
+        System.out.println(gen);
         for (int i=0;i<5;i++){
             System.out.println(gen.next());
         }
