@@ -8,6 +8,7 @@ public class TupleTest {
     static ThreeTuple<Amphibian,String,Integer> g(){
         return new ThreeTuple<Amphibian, String, Integer>(new Amphibian(),"hi",47);
     }
+
     static FourTuple<Vehicle,Amphibian,String,Integer> h(){
         return new FourTuple<Vehicle,Amphibian, String, Integer>(new Vehicle(),new Amphibian(),"hi",47);
     }
