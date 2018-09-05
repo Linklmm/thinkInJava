@@ -32,6 +32,6 @@ class FillTest{
         Fill.fill(contracts,Contract.class,2);
         for (Contract c:contracts)
             System.out.println(c);
-        
+
     }
 }
