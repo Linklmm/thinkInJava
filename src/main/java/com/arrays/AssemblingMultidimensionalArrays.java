@@ -1,16 +1,7 @@
-/**
- * 版权声明：Copyright(c) 2018 UCAR Inc. All Rights Reserved.
- *
- * @program: ThreadTest
- * @Author minmin.liu(minmin.liu @ ucarinc.com)
- * @Date 2018-10-26 16:48
- * @Version 1.0
- * @Description 非基本类型的对象数组
- */
-
 package com.arrays;
-
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
 
 public class AssemblingMultidimensionalArrays {
     public static void main(String[] args) {
@@ -24,5 +15,12 @@ public class AssemblingMultidimensionalArrays {
             }
         }
         System.out.println(Arrays.deepToString(a));
+
+        Long timestamp= new Long(System.currentTimeMillis());
+        System.out.println("timestamp"+timestamp);
+        System.out.println(timestamp/1000/3600);
+        System.out.println(Calendar.getInstance().getTimeInMillis() / 1000);
+        Date date=new Date();
+        System.out.println(date);
     }
 }
