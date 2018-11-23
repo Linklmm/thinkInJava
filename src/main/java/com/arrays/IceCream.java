@@ -19,6 +19,7 @@ public class IceCream {
             do {
                 t=rand.nextInt(FLAVORS.length);
             }while (picked[t]);
+            System.out.println(t);
             results[i]=FLAVORS[t];
             picked[t]=true;
         }
@@ -26,6 +27,10 @@ public class IceCream {
     }
 
     public static void main(String[] args) {
+        boolean[] picked=new boolean[FLAVORS.length];
+        for(int i=0;i<picked.length;i++){
+            System.out.println(picked[i]);
+        }
         for (int i=0;i<7;i++){
             System.out.println(Arrays.toString(flavorSet(3)));
         }
