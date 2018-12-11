@@ -31,5 +31,8 @@ public class Sum {
 
         BigDecimal mul=div.multiply(new BigDecimal(100));
         System.out.println(mul);
+        System.out.println(mul);System.out.println(mul);
+        System.out.println(mul);
+        
     }
 }
