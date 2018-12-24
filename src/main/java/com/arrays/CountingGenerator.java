@@ -7,7 +7,7 @@ import com.sun.org.apache.regexp.internal.RE;
  * @author lmm
  * @Title: CountingGenerator
  * @ProjectName thinkInJava
- * @Description: TODO
+ * @Description: 计数生成器集合
  * @date 18-12-17下午4:55
  */
 public class CountingGenerator {

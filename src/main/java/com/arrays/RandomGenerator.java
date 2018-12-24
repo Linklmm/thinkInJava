@@ -50,7 +50,7 @@ public class RandomGenerator {
         public Integer(int modulo){mod = modulo;}
         @Override
         public java.lang.Integer next() {
-            return r.nextInt();
+            return r.nextInt(mod);
         }
     }
     public static class Long implements Generator<java.lang.Long>{
