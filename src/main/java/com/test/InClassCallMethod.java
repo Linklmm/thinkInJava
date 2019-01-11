@@ -24,7 +24,6 @@ public class InClassCallMethod {
         InClassCallMethod inClassCallMethod=new InClassCallMethod();
         inClassCallMethod.B();
         Date date =new Date();
-        System.out.println(date);
         ///jkjkljkljkljkljkljl
     }
 }
