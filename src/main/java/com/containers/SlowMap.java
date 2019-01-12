@@ -15,6 +15,7 @@ public class SlowMap<K,V> extends AbstractMap<K,V> {
     @Override
     public V put(K key, V value){
         V oldValue =get(key);
+        //判断key是否存在，不存在添加key和value，存在存入新value
         if (!keys.contains(key)){
             keys.add(key);
             values.add(value);
@@ -25,6 +26,7 @@ public class SlowMap<K,V> extends AbstractMap<K,V> {
     }
 
     @Override
+    //key是object
     public V get(Object key) {
         if (!keys.contains(key)){
             return null;
