@@ -21,5 +21,7 @@ public class InitValue {
     public static void main(String[] args){
      InitValue initValue=new InitValue(2);
      System.out.println(initValue);
+     String s = "1";
+     System.out.println(Integer.decode(s));
     }
 }
