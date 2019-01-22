@@ -10,33 +10,33 @@ import java.util.*;
  * @date 19-1-22上午9:52
  */
 public class ListSortSearch {
-    public static void main(String[] args){
-        List<String> list= new ArrayList<String>(Utilities.list);
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<String>(Utilities.list);
         list.addAll(Utilities.list);
         System.out.println(list);
-        Collections.shuffle(list,new Random(47));
-        System.out.println("shuffled: "+list);
+        Collections.shuffle(list, new Random(47));
+        System.out.println("shuffled: " + list);
 
         //用来移除从10位置到列表头部的所有元素
         ListIterator<String> it = list.listIterator(10);
-        while (it.hasNext()){
+        while (it.hasNext()) {
             it.next();
             it.remove();
         }
-        System.out.println("Trimmed: "+list);
+        System.out.println("Trimmed: " + list);
         Collections.sort(list);
-        System.out.println("Sorted: "+list);
+        System.out.println("Sorted: " + list);
         String key = list.get(7);
-        int index = Collections.binarySearch(list,key);
-        System.out.println("Location of "+key+" is "+index+
-                ", list.get("+index+") = "+list.get(index));
+        int index = Collections.binarySearch(list, key);
+        System.out.println("Location of " + key + " is " + index +
+                ", list.get(" + index + ") = " + list.get(index));
         Collections.sort(list, String.CASE_INSENSITIVE_ORDER);
-        System.out.println("Case-insensitive sorted: "+list);
+        System.out.println("Case-insensitive sorted: " + list);
 
         key = list.get(7);
-        index = Collections.binarySearch(list,key,
+        index = Collections.binarySearch(list, key,
                 String.CASE_INSENSITIVE_ORDER);
-        System.out.println("Location of "+key+" is "+index+
-                ", list.get("+index+") = "+list.get(index));
+        System.out.println("Location of " + key + " is " + index +
+                ", list.get(" + index + ") = " + list.get(index));
     }
 }

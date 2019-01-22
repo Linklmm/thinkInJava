@@ -12,7 +12,7 @@ import java.util.Iterator;
  * @date 19-1-22上午10:48
  */
 public class FailFast {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Collection<String> c = new ArrayList<String>();
         Iterator<String> it = c.iterator();
         c.add("An Object");
