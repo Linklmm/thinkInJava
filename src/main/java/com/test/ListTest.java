@@ -23,5 +23,8 @@ public class ListTest {
         list1.add(6);
         list.addAll(list1);
         System.out.println(list);
+        List<Integer> sublist =list.subList(1,3);
+        System.out.println(sublist);
+
     }
 }
