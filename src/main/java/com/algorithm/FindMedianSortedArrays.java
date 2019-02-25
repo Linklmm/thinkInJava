@@ -25,7 +25,7 @@ public class FindMedianSortedArrays {
             return newArray[newArray.length/2];
         }
     }
-//test
+//
     public static void main(String[] args) {
         FindMedianSortedArrays findMedianSortedArrays = new FindMedianSortedArrays();
         int[] nums1 ={1,2};
