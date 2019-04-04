@@ -6,7 +6,7 @@ import java.util.Random;
  * 版权声明：Copyright(c) 2019
  *
  * @program: ThreadTest
- * @Author minmin.liu(minmin.liu @ ucarinc.com)
+ * @Author minmin.liu
  * @Date 2019-04-04 10:54
  * @Version 1.0
  * @Description 算术操作符的用法

@@ -6,7 +6,7 @@ import java.util.Random;
  * 版权声明：Copyright(c) 2019
  *
  * @program: ThreadTest
- * @Author minmin.liu(minmin.liu @ ucarinc.com)
+ * @Author minmin.liu
  * @Date 2019-04-04 11:31
  * @Version 1.0
  * @Description 逻辑操作符
