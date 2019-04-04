@@ -4,7 +4,7 @@ package com.operators;
  * 版权声明：Copyright(c) 2019
  *
  * @program: ThreadTest
- * @Author minmin.liu(minmin.liu @ ucarinc.com)
+ * @Author minmin.liu
  * @Date 2019-04-04 11:20
  * @Version 1.0
  * @Description 测试对象的等价性2
