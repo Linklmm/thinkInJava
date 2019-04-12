@@ -15,6 +15,8 @@ public class BitManinpulation {
         System.out.println("-1:" + Integer.toBinaryString(-1));
         System.out.println("+1:" + Integer.toBinaryString(+1));
         int maxpos = 2147483647;
+
+
         System.out.println("maxops:" + maxpos);
 
         int maxneg = -2147483648;
