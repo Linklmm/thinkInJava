@@ -4,7 +4,7 @@ package com.test;
  * 版权声明：Copyright(c) 2019
  *
  * @program: ThreadTest
- * @Author minmin.liu(minmin.liu @ ucarinc.com)
+ * @Author
  * @Date 2019-04-28 16:53
  * @Version 1.0
  * @Description 测试实体类
@@ -42,5 +42,14 @@ public class Human {
 
     public void setHight(Integer hight) {
         this.hight = hight;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "age=" + age +
+                ", sex=" + sex +
+                ", hight=" + hight +
+                '}';
     }
 }
