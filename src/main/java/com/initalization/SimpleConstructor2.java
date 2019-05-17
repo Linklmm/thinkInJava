@@ -10,5 +10,6 @@ public class SimpleConstructor2 {
         for (int i=0;i<10;i++){
             new Rock2(i);
         }
+//        Rock2 rock2 =new Rock2();
     }
 }
