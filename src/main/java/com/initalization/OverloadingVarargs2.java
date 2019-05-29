@@ -15,7 +15,7 @@ public class OverloadingVarargs2 {
     }
 
     public static void main(String[] args) {
-        f(1, 'a');
-        f('a', 'b');
+//        f(1, 'a');
+//        f('a', 'b');
     }
 }

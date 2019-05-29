@@ -6,7 +6,16 @@ package com.initalization;
  * @Description:
  */
 public class OverloadingVarargs3 {
-    static void f(float i,Character... args){
+    static void f1(float i, Character... args) {
+        System.out.println("first");
+    }
 
+    static void f1(char c, Character... args) {
+        System.out.println("second");
+    }
+
+    public static void main(String[] args) {
+        OverloadingVarargs3.f1(1, 'a');
+        OverloadingVarargs3.f1('a', 'b');
     }
 }
