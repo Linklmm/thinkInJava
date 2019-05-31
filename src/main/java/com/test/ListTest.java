@@ -17,6 +17,11 @@ public class ListTest {
         list.add(1);
         list.add(2);
         list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+
+
         List<Integer> list1 = new ArrayList<Integer>();
         list1.add(4);
         list1.add(5);
@@ -25,6 +30,24 @@ public class ListTest {
         System.out.println(list);
         List<Integer> sublist =list.subList(1,3);
         System.out.println(sublist);
+
+        for (int i=0;i<list.size();i++){
+            if (i==3){
+                list.remove(i);
+            }else if (i==5){
+                list.remove(i);
+            }
+
+        }
+        System.out.println(list);
+        for (Integer i:list){
+            if (i==5){
+                list.remove(i);
+            }else if (i==6){
+                list.remove(i);
+            }
+        }
+        System.out.println(list);
 
     }
 }

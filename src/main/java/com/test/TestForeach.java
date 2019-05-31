@@ -21,27 +21,44 @@ public class TestForeach {
         list.add(human);
         list.add(human1);
         list.add(human2);
-        Integer hight1 = null;
-        Integer hight2 = null;
-
-        for (Human h : list) {
-            if (h.getAge() == 10) {
-                hight1 = h.getHight();
-            }
-            if (h.getAge() == 11) {
-                hight2 = h.getHight();
-            }
-        }
-
-        for (Human h : list) {
-            if (h.getAge() == 12) {
-                h.setAge(h.getHight());
+        System.out.println(list);
+//        for (Human h:list){
+//            if (h.getAge()==10){
+//                list.remove(h);
+//            }else if (h.getAge() == 12){
+//                list.remove(h);
+//            }
+//        }
+        for (int i=0;i<list.size();i++){
+            if (list.get(i).getAge()==10){
+                list.remove(i);
+            }else if (list.get(i).getAge() ==12){
+                list.remove(i);
             }
         }
-        System.out.println(hight1);
-        System.out.println(hight2);
-        System.out.println(human2);
-        System.out.println(list.get(2));
+        System.out.println(list);
+
+//        Integer hight1 = null;
+//        Integer hight2 = null;
+//
+//        for (Human h : list) {
+//            if (h.getAge() == 10) {
+//                hight1 = h.getHight();
+//            }
+//            if (h.getAge() == 11) {
+//                hight2 = h.getHight();
+//            }
+//        }
+//
+//        for (Human h : list) {
+//            if (h.getAge() == 12) {
+//                h.setAge(h.getHight());
+//            }
+//        }
+//        System.out.println(hight1);
+//        System.out.println(hight2);
+//        System.out.println(human2);
+//        System.out.println(list.get(2));
 
     }
 }
