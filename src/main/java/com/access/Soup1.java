@@ -6,8 +6,10 @@ package com.access;
  * @Description:非单例模式
  */
 public class Soup1 {
-    private Soup1(){}
-    private static int i=0;
+    private Soup1() {
+    }
+
+    private static int i = 0;
 
     public static int getI() {
         return i;
@@ -17,7 +19,7 @@ public class Soup1 {
         Soup1.i = i;
     }
 
-    public static Soup1 makeSoup(){
+    public static Soup1 makeSoup() {
         i++;
         return new Soup1();
     }

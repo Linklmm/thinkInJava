@@ -6,17 +6,18 @@ package com.access;
  * @Description:
  */
 public class Lunch {
-    void testPrivate(){
+    void testPrivate() {
 //        Soup1 soup = new Soup1();
     }
-    void testStatic(){
+
+    void testStatic() {
         Soup1 soup = Soup1.makeSoup();
     }
 
     /**
      * 单例模式：始终只能创建它的一个对象
      */
-    void testSingleton(){
+    void testSingleton() {
         Soup2.access().f();
     }
 
