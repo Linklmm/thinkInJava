@@ -5,7 +5,7 @@ import static com.util.Print.print;
 /**
  * @Auther: linklmm
  * @Date: 2019/6/12 17:35
- * @Description:
+ * @Description:继承与清理
  */
 class Characteristic{
     private String s;
