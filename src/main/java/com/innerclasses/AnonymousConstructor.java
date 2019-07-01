@@ -19,7 +19,7 @@ public class AnonymousConstructor {
             {print("Inside instance initializer");}
             @Override
             public void f() {
-                print("In anonymous f()");
+                print("In anonymous f() i = "+i);
             }
         };
     }
