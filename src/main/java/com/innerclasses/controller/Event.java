@@ -16,6 +16,7 @@ public abstract class Event {
 
     public void start() {
         evenTime = System.nanoTime() + delayTime;
+        System.out.println("evenTime = "+evenTime);
     }
 
     public boolean ready() {
