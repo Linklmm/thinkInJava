@@ -3,7 +3,7 @@ package com.thread;
 public class InnerThread1 {
     private int countDown=5;
     private Inner inner;
-
+    /*内部类*/
     private class Inner extends Thread{
         Inner(String name){
             super(name);
