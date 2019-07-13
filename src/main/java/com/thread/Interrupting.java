@@ -9,6 +9,9 @@ import java.util.concurrent.TimeUnit;
 
 import static com.util.Print.print;
 
+/**
+ * 可中断阻塞
+ */
 class SleepBlocked implements Runnable {
     @Override
     public void run() {
@@ -21,6 +24,9 @@ class SleepBlocked implements Runnable {
     }
 }
 
+/**
+ * 不可中断阻塞
+ */
 class IOBlocked implements Runnable {
     private InputStream in;
 
@@ -44,6 +50,9 @@ class IOBlocked implements Runnable {
     }
 }
 
+/**
+ * 不可中断阻塞
+ */
 class SynchronizedBlocked implements Runnable {
     public synchronized void f() {
         while (true) {
