@@ -25,7 +25,7 @@ class SleepBlocked implements Runnable {
 }
 
 /**
- * 不可中断阻塞
+ * 不可中断阻塞 I/O操作
  */
 class IOBlocked implements Runnable {
     private InputStream in;
@@ -51,7 +51,7 @@ class IOBlocked implements Runnable {
 }
 
 /**
- * 不可中断阻塞
+ * 不可中断阻塞 synchronized锁
  */
 class SynchronizedBlocked implements Runnable {
     public synchronized void f() {

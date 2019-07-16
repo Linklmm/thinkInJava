@@ -11,6 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 import static com.util.Print.print;
 
+/**
+ * i/o执行阻塞中断
+ */
 public class CloseResource {
     public static void main(String[] args) throws Exception {
         ExecutorService exec = Executors.newCachedThreadPool();
