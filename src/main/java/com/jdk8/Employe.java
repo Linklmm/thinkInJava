@@ -15,11 +15,37 @@ public class Employe {
     private String name;
     private int age;
     private double money;
+    private Status status;
 
     public Employe(String name, int age, double money) {
         this.name = name;
         this.age = age;
         this.money = money;
+    }
+
+    public Employe(String name, int age, double money, Status status) {
+        this.name = name;
+        this.age = age;
+        this.money = money;
+        this.status = status;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "Employe{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", money=" + money +
+                ", status=" + status +
+                '}';
     }
 
     public String getName() {
@@ -30,7 +56,7 @@ public class Employe {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
@@ -47,15 +73,6 @@ public class Employe {
     }
 
     @Override
-    public String toString() {
-        return "Employe{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", money=" + money +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -68,5 +85,11 @@ public class Employe {
     @Override
     public int hashCode() {
         return Objects.hash(name, age, money);
+    }
+
+    public enum Status{
+        FREE,
+        BUSY,
+        VOCATION;
     }
 }
