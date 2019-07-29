@@ -17,9 +17,10 @@ public class StringTest {
             System.out.println(time[i]);
         }
         System.out.println(time[1]);
-        String s ="www.ucarinc.com";
-        s.split(".");
-        System.out.println(s);
-        System.out.println(s.length());
+        String[] s ="www.ucarinc.com".split("ucarinc");
+        for(String str :s) {
+            System.out.println(str);
+        }
+        System.out.println(s.length);
     }
 }
