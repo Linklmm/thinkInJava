@@ -31,3 +31,10 @@ hs_err_pid*
 *.iml
 out
 gen
+将删除 .DS_Store
+将删除 java_pid38901.hprof
+将删除 src/.DS_Store
+将删除 src/main/.DS_Store
+将删除 src/main/java/.DS_Store
+将删除 src/main/java/com/.DS_Store
+将删除 src/main/java/com/jvm/Math.txt
