@@ -2,6 +2,9 @@ package com.test;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 版权声明：Copyright(c) 2019
  *
@@ -25,6 +28,10 @@ public class TestGetChars {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        List list = Arrays.asList(str2);
+        System.out.println(list.size());
+        System.out.println(list.get(0));
+//        list.remove(0);java.lang.UnsupportedOperationException
     }
 
     @Test

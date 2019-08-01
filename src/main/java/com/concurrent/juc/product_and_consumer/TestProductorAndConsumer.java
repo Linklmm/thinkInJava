@@ -1,4 +1,4 @@
-package com.concurrent.juc;
+package com.concurrent.juc.product_and_consumer;
 
 /**
  * 版权声明：Copyright(c) 2019
