@@ -31,6 +31,8 @@ public class TestForkJoinPool {
         System.out.println(sum);
         Instant end = Instant.now();
         System.out.println("耗时："+ Duration.between(start,end).toMillis());
+
+        
     }
 
     @Test
