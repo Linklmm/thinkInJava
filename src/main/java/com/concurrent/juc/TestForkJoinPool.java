@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.HashMap;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
@@ -31,8 +32,6 @@ public class TestForkJoinPool {
         System.out.println(sum);
         Instant end = Instant.now();
         System.out.println("耗时："+ Duration.between(start,end).toMillis());
-
-        
     }
 
     @Test
