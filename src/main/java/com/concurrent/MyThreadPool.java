@@ -3,6 +3,7 @@ package com.concurrent;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -35,6 +36,7 @@ public class MyThreadPool {
      * 已经工作的线程数目
      */
     private int workThreadnum;
+    ConcurrentHashMap<String,String> map = new ConcurrentHashMap<>();
 
     private final ReentrantLock mainLock = new ReentrantLock();
 
