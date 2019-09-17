@@ -45,4 +45,8 @@ public class TwinsLockTest {
             System.out.println();
         }
     }
+    @Test
+    public void test2(){
+        System.out.println(Integer.parseInt("0001111",2));
+    }
 }
