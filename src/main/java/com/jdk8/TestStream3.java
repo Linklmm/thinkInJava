@@ -1,6 +1,7 @@
 package com.jdk8;
 
 import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.util.StringUtils;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -87,6 +88,7 @@ public class TestStream3 {
     @Test
     public void test3() {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        //System.out.println(list.get(list.size()-1));
 
         Integer sum = list.stream()
                 .reduce(0, (x, y) -> x + y);
@@ -207,4 +209,82 @@ public class TestStream3 {
                 .collect(Collectors.joining(",","==","--"));
         System.out.println(s);
     }
+    @Test
+    public void test10(){
+        String s = "";
+        System.out.println(Double.valueOf(s));
+    }
+    @Test
+    public void test11(){
+        String s = "[神州租车·宝沃1天免费体验券]\n" +
+                "[使用条件]\n" +
+                "关联日起3天完成取还车的日租订单可享；\n" +
+                "[使用规则]\n" +
+                "①租期>=1天时日租订单可用，可免租期内首日的【车辆租赁及服务费】、【基础服务费】和【车辆整备费】，其他费用正常收取；\n" +
+                "②每单限用1张，每名用户仅可享受1次宝沃免费试驾优惠；\n" +
+                "③不与顺风车、预付特价、套餐产品同享，不与其他优惠活动、优惠类租车券同时享用，分时租赁产品不可用，上门送车订单不可用；\n" +
+                "④优惠券不可转赠、不开发票、不找零、不兑换现金；\n" +
+                "[使用城市]仅限贵阳、昆明、济宁各直营门店；\n" +
+                "[使用车型]仅限宝沃BX5、BX6、BX7相关车型；";
+
+
+        String[] ss = s.replaceFirst("\\[","")
+        .replaceAll("\\]\\n\\n","&&")
+        .replaceAll("\\]\\n","&&")
+        .replaceAll("\\]","&&")
+        .split("\\[");
+        List<A> a = Arrays.stream(ss).map(A::new).collect(Collectors.toList());
+
+
+
+        System.out.println(a);
+        //List<String> ss2 = ss.stream().filter(e->StringUtils.isNotBlank(e)).collect(Collectors.toList());
+        //System.out.println(ss2);
+        //List<CouponUseContent> couponUseContents = ss2.stream().map(s1 -> {
+        //    CouponUseContent couponUseContent = new CouponUseContent();
+        //    couponUseContent.setUseTitle(s1);
+        //    couponUseContent.setUseTitle(s1);
+        //    return couponUseContent;
+        //}).collect(Collectors.toList());
+        //System.out.println(couponUseContents);
+    }
+
+    private class A{
+        private String title;
+        private String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public A(String o) {
+            String[] ss = o.split("&&");
+            this.title = ss[0];
+            if(ss.length>1) {
+				this.name = ss[1].replaceAll("[\n\r]+$", "");
+			}
+            //this.name = ss[1].endsWith("\\n")?ss[1].substring(0,ss[1].length()-3):ss[1];
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+		@Override
+		public String toString() {
+			return "A{" +
+					"title='" + title + '\'' +
+					", name='" + name + '\'' +
+					'}';
+		}
+
+	}
 }
